@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Подбор программы</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="#" class="page-header__logo">
+        <img src="" alt="Логотип Кэт-энерджи">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="catalog.html">Каталог</a></li>
+          <li class="site-list__item"><a href="#">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Страница подбора программы питания</h1>
+      <section class="select">
+        <h2 class="select__title">Подбор программы</h2>
+        <b class="select__text">Заполните анкету и мы подберем программу питания для вашего кота</b>
+        <form action="https://echo.htmlacademy.ru" class="select__form form">
+          <fieldset class="form__main-options options">
+            <div class="options__wrapper">
+              <label class="options__title" for="name">Имя:*</label>
+              <input class="options_field" type="text" id="name" name="name" placeholder="Барсик">
+            </div>
+            <div class="options__wrapper">
+              <label class="options__title" for="weight">Вес (кг):*</label>
+              <input class="options_field" type="text" id="weight" name="weight" placeholder="7">
+            </div>
+            <div class="options__wrapper">
+              <label class="options__title" for="age">Возраст (лет):</label>
+              <input class="options_field" type="text" id="age" name="age" placeholder="7">
+            </div>
+          </fieldset>
+          <fieldset class="form__purposes purposes">
+            <div class="purposes__wrapper">
+              <label class="purposes__title" for="radio1">Похудение</label>
+              <input class="purposes__field" type="radio" id="radio1" name="purpose" checked>
+            </div>
+            <div class="purposes__wrapper">
+              <label class="purposes__title" for="radio2">Набор массы</label>
+              <input class="purposes__field" type="radio" id="radio2" name="purpose">
+            </div>
+            <div class="purposes__wrapper">
+              <label class="purposes__title" for="radio3">Не знаю (Нужен ваш совет)</label>
+              <input class="purposes__field" type="radio" id="radio3" name="purpose">
+            </div>
+          </fieldset>
+          <fieldset class="form_user-contacts user-contacts">
+            <legend class="user-contacts__caption">Контактные данные (владельца кота)</legend>
+            <div class="user-contacts__wrapper">
+              <label class="user-contacts__title" for="email"></label>
+              <input class="user_contacts__field" type="email" id="email" name="email">
+              <span class="user-contacts__image user-contacts__image--mail"></span>
+            </div>
+            <div class="user-contacts__wrapper">
+              <label class="user-contacts__title" for="tel"></label>
+              <input class="user_contacts__field" type="tel" id="tel" name="tel">
+              <span class="user-contacts__image user-contacts__image--tel"></span>
+            </div>
+          </fieldset>
+          <fieldset class="form__addition addition">
+            <legend class="addition__caption">Дополнительно</legend>
+            <ul class="addition__list">
+              <li class="addition__item">
+                <label class="addition_title" for="check1">Сахарозаменитель</label>
+                <input class="addition__field" type="checkbox" id="check1" name="checkboxes">
+              </li>
+              <li class="addition__item">
+                <label class="addition_title" for="check2">Молоко</label>
+                <input class="addition__field" type="checkbox" id="check2" name="checkboxes"></li>
+              <li class="addition__item">
+                <label class="addition_title" for="check3"></label>
+                <input class="addition__field" type="checkbox" id="check3" name="checkboxes">
+              </li>
+              <li class="addition__item">
+                <label class="addition_title" for="check4">Витамины</label>
+                <input class="addition__field" type="checkbox" id="check4" name="checkboxes">
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form__submit-button" type="submit">Отправить заявку</button>
+          <small class="form__legend">* — Обязательные поля</small>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__intro">приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="page-footer__map">
+
+      </div>
+      <div class="page-footer__logo">
+        <img src="" alt="">
+      </div>
+      <div class="page-footer-social social">
+        <ul class="social__list">
+          <li class="social__item"><a href="">Мы в Вконтакте</a></li>
+          <li class="social__item"><a href="">Мы в Фейсбуке</a></li>
+          <li class="social__item"><a href="">Мы в Инстаграме</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text"></b>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
