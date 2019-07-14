@@ -20,68 +20,72 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Страница подбора программы питания</h1>
-      <section class="select">
-        <h2 class="select__title">Подбор программы</h2>
-        <b class="select__text">Заполните анкету и мы подберем программу питания для вашего кота</b>
-        <form action="https://echo.htmlacademy.ru" class="select__form form">
-          <fieldset class="form__main-options options">
-            <div class="options__wrapper">
-              <label class="options__title" for="name">Имя:*</label>
-              <input class="options_field" type="text" id="name" name="name" placeholder="Барсик">
+      <section class="selection">
+        <h2 class="selection__title">Подбор программы</h2>
+        <b class="selection__text">Заполните анкету и мы подберем программу питания для вашего кота</b>
+        <form class="select__form form" method="POST" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__texts texts">
+            <div class="texts__wrapper">
+              <label class="texts__title" for="name">Имя:*</label>
+              <input class="texts_field" type="text" id="name" name="name" placeholder="Барсик">
             </div>
-            <div class="options__wrapper">
-              <label class="options__title" for="weight">Вес (кг):*</label>
-              <input class="options_field" type="text" id="weight" name="weight" placeholder="7">
+            <div class="texts__wrapper">
+              <label class="texts__title" for="weight">Вес (кг):*</label>
+              <input class="texts_field" type="text" id="weight" name="weight" placeholder="7">
             </div>
-            <div class="options__wrapper">
-              <label class="options__title" for="age">Возраст (лет):</label>
-              <input class="options_field" type="text" id="age" name="age" placeholder="7">
-            </div>
-          </fieldset>
-          <fieldset class="form__purposes purposes">
-            <div class="purposes__wrapper">
-              <label class="purposes__title" for="radio1">Похудение</label>
-              <input class="purposes__field" type="radio" id="radio1" name="purpose" checked>
-            </div>
-            <div class="purposes__wrapper">
-              <label class="purposes__title" for="radio2">Набор массы</label>
-              <input class="purposes__field" type="radio" id="radio2" name="purpose">
-            </div>
-            <div class="purposes__wrapper">
-              <label class="purposes__title" for="radio3">Не знаю (Нужен ваш совет)</label>
-              <input class="purposes__field" type="radio" id="radio3" name="purpose">
+            <div class="texts__wrapper">
+              <label class="texts__title" for="age">Возраст (лет):</label>
+              <input class="texts_field" type="text" id="age" name="age" placeholder="7">
             </div>
           </fieldset>
-          <fieldset class="form_user-contacts user-contacts">
-            <legend class="user-contacts__caption">Контактные данные (владельца кота)</legend>
-            <div class="user-contacts__wrapper">
-              <label class="user-contacts__title" for="email"></label>
-              <input class="user_contacts__field" type="email" id="email" name="email">
-              <span class="user-contacts__image user-contacts__image--mail"></span>
+          <fieldset class="form__radios radios">
+            <div class="radios__wrapper">
+              <label class="radios__title" for="radio1">Похудение</label>
+              <input class="radios__field" type="radio" id="radio1" name="purpose" checked>
             </div>
-            <div class="user-contacts__wrapper">
-              <label class="user-contacts__title" for="tel"></label>
-              <input class="user_contacts__field" type="tel" id="tel" name="tel">
-              <span class="user-contacts__image user-contacts__image--tel"></span>
+            <div class="radios__wrapper">
+              <label class="radios__title" for="radio2">Набор массы</label>
+              <input class="radios__field" type="radio" id="radio2" name="purpose">
+            </div>
+            <div class="radios__wrapper">
+              <label class="radios__title" for="radio3">Не знаю (Нужен ваш совет)</label>
+              <input class="radios__field" type="radio" id="radio3" name="purpose">
             </div>
           </fieldset>
-          <fieldset class="form__addition addition">
-            <legend class="addition__caption">Дополнительно</legend>
-            <ul class="addition__list">
-              <li class="addition__item">
-                <label class="addition_title" for="check1">Сахарозаменитель</label>
-                <input class="addition__field" type="checkbox" id="check1" name="checkboxes">
+          <fieldset class="form_texts texts">
+            <legend class="texts__caption">Контактные данные (владельца кота)</legend>
+            <div class="texts__wrapper">
+              <label class="texts__title" for="email">E-mail:*</label>
+              <input class="texts__field" type="email" id="email" name="email">
+              <span class="texts__image texts__image--mail"></span>
+            </div>
+            <div class="texts__wrapper">
+              <label class="texts__title" for="tel">Телефон:*</label>
+              <input class="texts__field" type="tel" id="tel" name="tel">
+              <span class="texts__image texts__image--tel"></span>
+            </div>
+          </fieldset>
+          <fieldset class="form__comments comments">
+            <legend class="comments__caption">Комментарий</legend>
+            <textarea  class="comments__field" rows="8" cols="80" id="textarea" name="textarea"></textarea>
+          </fieldset>
+          <fieldset class="form__checkboxes checkboxes">
+            <legend class="checkboxes__caption">Дополнительно</legend>
+            <ul class="checkboxes__list">
+              <li class="checkboxes__item">
+                <label class="checkboxes__title" for="check1">Сахарозаменитель</label>
+                <input class="checkboxes__field" type="checkbox" id="check1" name="checkboxes">
               </li>
-              <li class="addition__item">
-                <label class="addition_title" for="check2">Молоко</label>
-                <input class="addition__field" type="checkbox" id="check2" name="checkboxes"></li>
-              <li class="addition__item">
-                <label class="addition_title" for="check3"></label>
-                <input class="addition__field" type="checkbox" id="check3" name="checkboxes">
+              <li class="checkboxes__item">
+                <label class="checkboxes__title" for="check2">Питьевая вода</label>
+                <input class="checkboxes__field" type="checkbox" id="check2" name="checkboxes"></li>
+              <li class="checkboxes__item">
+                <label class="checkboxes_title" for="check3">Молоко</label>
+                <input class="checkboxes__field" type="checkbox" id="check3" name="checkboxes">
               </li>
-              <li class="addition__item">
-                <label class="addition_title" for="check4">Витамины</label>
-                <input class="addition__field" type="checkbox" id="check4" name="checkboxes">
+              <li class="checkboxes__item">
+                <label class="checkboxes__title" for="check4">Витамины</label>
+                <input class="checkboxes__field" type="checkbox" id="check4" name="checkboxes">
               </li>
             </ul>
           </fieldset>
