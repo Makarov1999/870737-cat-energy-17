@@ -1,0 +1,29 @@
+.features {
+  padding-top: 32px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 78px;
+  padding-bottom: 20px;
+
+}
+.features__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $base-bg-color--green;
+}

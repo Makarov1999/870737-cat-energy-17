@@ -1,0 +1,46 @@
+.example {
+  padding-top: 33px;
+  padding-left: 20px;
+  background-color: $base-bg-color--grey;
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 33px;
+  @include big_caption();
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 27px;
+}
+.example__item {
+  padding: 17px 43px;
+}
+
+.example__value {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #111111;
+}
+
+.example__legend {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
+}
+
+.example__total {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+  padding-bottom: 44px;
+}

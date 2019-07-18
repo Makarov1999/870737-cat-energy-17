@@ -1,0 +1,31 @@
+.preview {
+  padding-top: 29px;
+  background-color: $base-bg-color--green;
+  background-image: url(../../img/index-background-mobile@1x.jpg), linear-gradient(to bottom, $base-bg-color--green 60%, #ffffff 60%);
+  background-repeat: no-repeat;
+}
+.preview__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 19px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  word-wrap: break-word;
+}
+.preview__slogan {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 29px + 42px;
+}
+.preview__link {
+  @include generate_link();
+  padding: 14px 73px 11px 73px;
+}

@@ -1,0 +1,18 @@
+@mixin big_caption() {
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: left;
+  color: #111111;
+}
+@mixin generate_link() {
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $base-bg-color--green;
+}

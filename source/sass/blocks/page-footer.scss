@@ -1,0 +1,25 @@
+.page-footer {
+  background-color: $base-bg-color--grey;
+}
+
+.page-footer__contacts {
+  padding-top: 31px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 26px;
+  background-color: #ffffff;
+}
+.page-footer__logo {
+  display: inline-block;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+.page-footer__social {
+  padding: 23px 96px;
+}
+.page-footer__copyright {
+  padding: 22px 20px;
+}
