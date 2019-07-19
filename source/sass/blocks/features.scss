@@ -16,8 +16,8 @@
   padding: 0;
   padding-left: 78px;
   padding-bottom: 20px;
-
 }
+
 .features__item::before {
   content: "";
   position: absolute;
@@ -25,5 +25,5 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background-color: $base-bg-color--green;
+  background-color: $bg_green;
 }

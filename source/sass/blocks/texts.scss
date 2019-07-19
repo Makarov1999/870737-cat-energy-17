@@ -1,0 +1,40 @@
+.texts {
+  padding-top: 39px;
+}
+
+.texts__caption {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text_black;
+}
+
+.texts__title {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.texts__wrapper {
+  padding-bottom: 14px;
+}
+
+.texts__field {
+  padding: 15px;
+  border: 1px solid #cdcdcd;
+
+  &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $text_grey;
+  }
+
+  &:active {
+    border-color: $text_grey;
+  }
+}

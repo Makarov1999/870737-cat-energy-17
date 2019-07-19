@@ -1,41 +1,32 @@
-@import "variables", "mixin", "normalize", "font";
-@import "blocks/page-header", "blocks/main-nav", "blocks/site-list", "blocks/preview", "blocks/targets", "blocks/features", "blocks/example", "blocks/page-footer", "blocks/contacts", "blocks/social", "blocks/copyright", "blocks/catalog", "blocks/product", "blocks/spec.scss";
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  font-family: "Oswald", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $base-text-color;
-  text-align: left;
-}
-
-a {
-  text-decoration: none;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0 0 0 0);
-  margin: -1px;
-}
-.btn {
-  @include generate_link();
-  &:hover {
-    background-color: #5eaa2f;
-  }
-  &:focus {
-    background-color: #5eaa2f;
-  }
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5eaa2f;
-  }
-}
-.basic-caption {
-  @include big_caption();
-
-}
+@import "variables";
+@import "mixin";
+@import "normalize";
+@import "font";
+@import "scaffolding";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/preview";
+@import "blocks/targets";
+@import "blocks/features";
+@import "blocks/example";
+@import "blocks/page-footer";
+@import "blocks/contacts";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/spec.scss";
+@import "blocks/visually-hidden";
+@import "blocks/btn";
+@import "blocks/basic-caption";
+@import "blocks/expand";
+@import "blocks/addit-catalog";
+@import "blocks/addition";
+@import "blocks/special-offer";
+@import "blocks/selection";
+@import "blocks/texts";
+@import "blocks/form";
+@import "blocks/radios";
+@import "blocks/comments";
+@import "blocks/checkboxes";

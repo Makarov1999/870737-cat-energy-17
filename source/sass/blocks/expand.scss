@@ -1,0 +1,47 @@
+.expand {
+  position: relative;
+}
+
+.expand__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text_black;
+}
+
+.expand__slogan {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text_grey;
+}
+
+.expand__button {
+  display: inline-block;
+  padding-top: 13px;
+  padding-right: 95px;
+  padding-bottom: 12px;
+  padding-left: 95px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $text_grey;
+  background-color: $bg_grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}

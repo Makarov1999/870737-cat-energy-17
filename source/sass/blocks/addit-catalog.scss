@@ -1,0 +1,39 @@
+.addit-catalog {
+  padding-top: 31px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 39px;
+}
+
+.addit-catalog__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  color: $text_black;
+}
+
+.addit-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.addit-catalog__item {
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-top: 1px solid $bg_grey;
+}
+
+.addit-catalog__button {
+  display: inline-block;
+  padding-top: 13px;
+  padding-right: 109px;
+  padding-bottom: 12px;
+  padding-left: 109px;
+}

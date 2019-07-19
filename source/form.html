@@ -23,19 +23,19 @@
       <section class="selection">
         <h1 class="selection__title basic-caption">Подбор программы</h1>
         <b class="selection__text">Заполните анкету и мы подберем программу питания для вашего кота</b>
-        <form class="select__form form" method="POST" action="https://echo.htmlacademy.ru">
+        <form class="selection__form form" method="POST" action="https://echo.htmlacademy.ru">
           <fieldset class="form__texts texts">
             <div class="texts__wrapper">
               <label class="texts__title" for="name">Имя:*</label>
-              <input class="texts_field" type="text" id="name" name="name" placeholder="Барсик" required>
+              <input class="texts__field" type="text" id="name" name="name" placeholder="Барсик" required>
             </div>
             <div class="texts__wrapper">
               <label class="texts__title" for="weight">Вес (кг):*</label>
-              <input class="texts_field" type="text" id="weight" name="weight" placeholder="7" required>
+              <input class="texts__field" type="text" id="weight" name="weight" placeholder="7" required>
             </div>
             <div class="texts__wrapper">
               <label class="texts__title" for="age">Возраст (лет):</label>
-              <input class="texts_field" type="text" id="age" name="age" placeholder="7">
+              <input class="texts__field" type="text" id="age" name="age" placeholder="7">
             </div>
           </fieldset>
           <fieldset class="form__radios radios">
@@ -52,7 +52,7 @@
               <input class="radios__field" type="radio" id="radio3" name="purpose" value="Не знаю (Нужен ваш совет)">
             </div>
           </fieldset>
-          <fieldset class="form_texts texts">
+          <fieldset class="form__texts texts">
             <legend class="texts__caption">Контактные данные (владельца кота)</legend>
             <div class="texts__wrapper">
               <label class="texts__title" for="email">E-mail:*</label>
@@ -67,7 +67,7 @@
           </fieldset>
           <fieldset class="form__comments comments">
             <legend class="comments__caption">Комментарий</legend>
-            <textarea  class="comments__field" rows="8" cols="80" id="textarea" name="textarea"></textarea>
+            <textarea  class="comments__field" rows="8" cols="80" id="textarea" name="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__checkboxes checkboxes">
             <legend class="checkboxes__caption">Дополнительно</legend>
@@ -80,7 +80,7 @@
                 <label class="checkboxes__title" for="check2">Питьевая вода</label>
                 <input class="checkboxes__field" type="checkbox" id="check2" name="checkboxes" value="Питьевая вода"></li>
               <li class="checkboxes__item">
-                <label class="checkboxes_title" for="check3">Молоко</label>
+                <label class="checkboxes__title" for="check3">Молоко</label>
                 <input class="checkboxes__field" type="checkbox" id="check3" name="checkboxes" value="Молоко">
               </li>
               <li class="checkboxes__item">
@@ -89,7 +89,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__submit-button" type="submit">Отправить заявку</button>
+          <button class="form__submit-button btn" type="submit">Отправить заявку</button>
           <small class="form__legend">* — Обязательные поля</small>
         </form>
       </section>

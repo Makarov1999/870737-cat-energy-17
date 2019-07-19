@@ -1,13 +1,14 @@
 .example {
   padding-top: 33px;
   padding-left: 20px;
-  background-color: $base-bg-color--grey;
+  background-color: $bg_grey;
 }
 
 .example__title {
   margin: 0;
   padding: 0;
   padding-bottom: 33px;
+
   @include big_caption();
 }
 
@@ -16,6 +17,7 @@
   padding: 0;
   padding-bottom: 27px;
 }
+
 .example__item {
   padding: 17px 43px;
 }
@@ -32,7 +34,7 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: #444444;
+  color: $text_grey;
 }
 
 .example__total {
@@ -41,6 +43,6 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: #111111;
+  color: $text_black;
   padding-bottom: 44px;
 }
