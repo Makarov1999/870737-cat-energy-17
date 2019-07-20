@@ -4,7 +4,7 @@
 
 .comments__caption {
   padding-bottom: 31px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -15,7 +15,7 @@
   resize: none;
 
   &::placeholder {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $font;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
