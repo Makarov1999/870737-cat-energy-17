@@ -1,8 +1,15 @@
 .preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 29px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: $bg_green;
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $bg_green 60%, #ffffff 60%);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $bg_green 50%, #ffffff 50%);
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 60%, 100% 100%;
 }
 
 .preview__title {
@@ -30,5 +37,17 @@
 
 .preview__link {
   @include generate_link();
-  padding: 14px 73px 11px 73px;
+  padding: 14px 20px 11px 20px;
+}
+
+@media (min-width: $tablet) {
+  .preview {
+    background-color: #ffffff;
+    background-image: none;
+  }
+
+  .preview__image {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
 }

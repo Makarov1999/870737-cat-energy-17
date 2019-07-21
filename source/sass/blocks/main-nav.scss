@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -7,4 +8,31 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.main-nav__toggle--close {
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.svg");
+}
+
+@media (min-width: $tablet) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
