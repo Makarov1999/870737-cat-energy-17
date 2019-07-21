@@ -1,0 +1,27 @@
+@mixin big_caption() {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: left;
+  color: $text_black;
+}
+
+@mixin generate_link() {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $bg_green;
+}
+
+@mixin generate_label {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #222222;
+}

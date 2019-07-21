@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -12,9 +13,9 @@
       <nav class="main-nav">
         <button class="main-nav__toggle">Меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог</a></li>
-          <li class="site-list__item"><a>Подбор программы</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог</a></li>
+          <li class="site-list__item"><a class="site-list__link">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
@@ -22,22 +23,22 @@
       <section class="selection">
         <h1 class="selection__title basic-caption">Подбор программы</h1>
         <b class="selection__text">Заполните анкету и мы подберем программу питания для вашего кота</b>
-        <form class="select__form form" method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__texts texts">
+        <form class="selection__form form" method="POST" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__item texts">
             <div class="texts__wrapper">
               <label class="texts__title" for="name">Имя:*</label>
-              <input class="texts_field" type="text" id="name" name="name" placeholder="Барсик" required>
+              <input class="texts__field" type="text" id="name" name="name" placeholder="Барсик" required>
             </div>
             <div class="texts__wrapper">
               <label class="texts__title" for="weight">Вес (кг):*</label>
-              <input class="texts_field" type="text" id="weight" name="weight" placeholder="7" required>
+              <input class="texts__field" type="text" id="weight" name="weight" placeholder="7" required>
             </div>
             <div class="texts__wrapper">
               <label class="texts__title" for="age">Возраст (лет):</label>
-              <input class="texts_field" type="text" id="age" name="age" placeholder="7">
+              <input class="texts__field" type="text" id="age" name="age" placeholder="7">
             </div>
           </fieldset>
-          <fieldset class="form__radios radios">
+          <fieldset class="form__item radios">
             <div class="radios__wrapper">
               <label class="radios__title" for="radio1">Похудение</label>
               <input class="radios__field" type="radio" id="radio1" name="purpose" value="Похудение" checked>
@@ -51,7 +52,7 @@
               <input class="radios__field" type="radio" id="radio3" name="purpose" value="Не знаю (Нужен ваш совет)">
             </div>
           </fieldset>
-          <fieldset class="form_texts texts">
+          <fieldset class="form__item texts">
             <legend class="texts__caption">Контактные данные (владельца кота)</legend>
             <div class="texts__wrapper">
               <label class="texts__title" for="email">E-mail:*</label>
@@ -64,11 +65,11 @@
               <span class="texts__image texts__image--tel"></span>
             </div>
           </fieldset>
-          <fieldset class="form__comments comments">
+          <fieldset class="form__item comments">
             <legend class="comments__caption">Комментарий</legend>
-            <textarea  class="comments__field" rows="8" cols="80" id="textarea" name="textarea"></textarea>
+            <textarea  class="comments__field" rows="8" cols="80" id="textarea" name="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="form__checkboxes checkboxes">
+          <fieldset class="form__item checkboxes">
             <legend class="checkboxes__caption">Дополнительно</legend>
             <ul class="checkboxes__list">
               <li class="checkboxes__item">
@@ -79,7 +80,7 @@
                 <label class="checkboxes__title" for="check2">Питьевая вода</label>
                 <input class="checkboxes__field" type="checkbox" id="check2" name="checkboxes" value="Питьевая вода"></li>
               <li class="checkboxes__item">
-                <label class="checkboxes_title" for="check3">Молоко</label>
+                <label class="checkboxes__title" for="check3">Молоко</label>
                 <input class="checkboxes__field" type="checkbox" id="check3" name="checkboxes" value="Молоко">
               </li>
               <li class="checkboxes__item">
@@ -88,7 +89,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__submit-button" type="submit">Отправить заявку</button>
+          <button class="form__submit-button btn" type="submit">Отправить заявку</button>
           <small class="form__legend">* — Обязательные поля</small>
         </form>
       </section>
@@ -106,9 +107,9 @@
       </a>
       <div class="page-footer-social social">
         <ul class="social__list">
-          <li class="social__item"><a href="">Мы в Вконтакте</a></li>
-          <li class="social__item"><a href="">Мы в Фейсбуке</a></li>
-          <li class="social__item"><a href="">Мы в Инстаграме</a></li>
+          <li class="social__item"><a class="social__link" href="" aria-label="Мы в Вконтакте"></a></li>
+          <li class="social__item"><a class="social__link" href="" aria-label="Мы в Фейсбуке"></a></li>
+          <li class="social__item"><a class="social__link" href="" aria-label="Мы в Инстаграме"></a></li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">

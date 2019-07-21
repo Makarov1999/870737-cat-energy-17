@@ -1,0 +1,49 @@
+.targets {
+  margin-top: 22px;
+}
+
+.targets__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.targets__item {
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  padding-right: 21px;
+  padding-bottom: 22px;
+  padding-left: 36px;
+  background-color: $bg_grey;
+}
+
+.targets__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  padding-left: 71px;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $text_black;
+}
+
+.targets__description {
+  margin: 0;
+  padding: 0;
+}
+
+.targets__link {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $text_black;
+}
