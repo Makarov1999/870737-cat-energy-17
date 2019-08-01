@@ -1,5 +1,6 @@
 .preview {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
   padding-top: 29px;
@@ -21,7 +22,6 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  word-wrap: break-word;
 }
 
 .preview__slogan {
@@ -42,12 +42,76 @@
 
 @media (min-width: $tablet) {
   .preview {
+    justify-content: flex-start;
+    min-height: 700px;
+    padding-left: 120px;
     background-color: #ffffff;
-    background-image: none;
+    background-image: url("../img/index-can-mobile@1x.png");
+    background-position: center bottom;
+  }
+
+  .preview__title {
+    font-size: 60px;
+    padding-right: 190px;
+    line-height: 60px;
+    text-align: left;
+    color: #111111;
+  }
+
+  .preview__slogan {
+    padding-bottom: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #111111;
   }
 
   .preview__image {
-    flex-grow: 0;
-    flex-shrink: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+  }
+
+  .preview__link {
+    width: 245px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .preview {
+    position: relative;
+    width: 1260px;
+    min-height: 550px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    background-image: none;
+    background-size: auto;
+    height: auto;
+    z-index: 2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -149px;
+      left: 50%;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      width: 720px;
+      height: 696px;
+      z-index: -1;
+    }
+  }
+
+  .preview__image {
+    position: static;
+    width: auto;
+    height: auto;
+    clip: auto;
+    margin: 0;
   }
 }

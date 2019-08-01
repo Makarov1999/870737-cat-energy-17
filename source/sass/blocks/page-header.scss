@@ -20,3 +20,16 @@
     padding-right: 30px;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-header {
+    width: 1260px;
+    margin: 0 auto;
+
+    &--main-page {
+      padding-top: 77px;
+      padding-right: 100px;
+      color: #ffffff;
+    }
+  }
+}

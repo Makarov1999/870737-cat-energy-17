@@ -1,7 +1,28 @@
 .copyright__link {
+  display: block;
   font-family: $font;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: $text_grey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet) {
+  .copyright__link {
+    &::after {
+      top: -3px;
+      right: -45px;
+    }
+  }
 }

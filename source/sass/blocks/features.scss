@@ -14,16 +14,105 @@
   position: relative;
   margin: 0;
   padding: 0;
+  min-height: 60px;
   padding-left: 78px;
   padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $bg_green;
+  }
+
+  &--health::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--form::before {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--consume::before {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--time::before {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.features__item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-color: $bg_green;
+@media (min-width: $tablet) {
+  .features {
+    padding-top: 51px;
+    padding-left: 33px;
+    padding-right: 118px;
+  }
+
+  .features__title {
+    font-size: 60px;
+  }
+
+  .features__list {
+    counter-reset: li;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 197px;
+    min-height: 228px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 117px;
+    padding-left: 0;
+    z-index: 1;
+
+    &:nth-child(2n) {
+      margin-left: 187px;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      top: -38px;
+      left: 50%;
+      font-size: 281px;
+      line-height: 281px;
+      color: $bg_grey;
+      z-index: -10;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .features {
+    width: 1260px;
+    margin: auto;
+    padding-top: 79px;
+  }
+
+  .features__item {
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
+  }
 }

@@ -20,3 +20,32 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@media (min-width: $tablet) {
+  .catalog {
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .catalog__item {
+    margin-top: 60px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog {
+    width: $desktop;
+    margin: 0 auto;
+  }
+}

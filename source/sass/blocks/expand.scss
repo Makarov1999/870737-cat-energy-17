@@ -1,5 +1,6 @@
 .expand {
   position: relative;
+  padding-top: 83px;
 }
 
 .expand__title {
@@ -9,6 +10,28 @@
   text-align: center;
   text-transform: uppercase;
   color: $text_black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 31px;
+    height: 2px;
+    background-color: $bg_grey;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 2px;
+    height: 31px;
+    background-color: $bg_grey;
+  }
 }
 
 .expand__slogan {
@@ -16,14 +39,15 @@
   font-size: 12px;
   line-height: 16px;
   color: $text_grey;
+  margin-top: 11px;
 }
 
 .expand__button {
+  width: 100%;
   display: inline-block;
+  margin-top: 22px;
   padding-top: 13px;
-  padding-right: 95px;
   padding-bottom: 12px;
-  padding-left: 95px;
   font-family: $font;
   font-weight: 400;
   font-size: 16px;
@@ -31,6 +55,7 @@
   text-align: center;
   color: $text_grey;
   background-color: $bg_grey;
+  text-transform: uppercase;
 
   &:hover {
     background-color: #ebebeb;
@@ -43,5 +68,41 @@
   &:active {
     background-color: #ebebeb;
     color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: $tablet) {
+  .expand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 166px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    width: 324px;
+    border: 1px solid $bg_grey;
+  }
+
+  .expand__title {
+    text-align: center;
+    font-size: 20px;
+    max-width: 134px;
+  }
+
+  .expand__slogan {
+    max-width: 166px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .expand__button {
+    margin-top: 85px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .expand {
+    width: 245px;
   }
 }
