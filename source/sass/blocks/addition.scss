@@ -1,5 +1,7 @@
 .addition__title {
-  padding-bottom: 15px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 14px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -9,9 +11,36 @@
 }
 
 .addition__wrapper {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 14px;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: $text_grey;
+}
+
+@media (min-width: $tablet) {
+  .addition__title {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 24px;
+  }
+
+  .addition__wrapper {
+    width: 224px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .addition__title {
+    padding-bottom: 0;
+  }
+
+  .addition__wrapper {
+    padding-bottom: 0;
+  }
 }

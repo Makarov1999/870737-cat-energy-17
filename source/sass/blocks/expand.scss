@@ -1,9 +1,14 @@
 .expand {
   position: relative;
   padding-top: 83px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .expand__title {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -35,11 +40,13 @@
 }
 
 .expand__slogan {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: $text_grey;
   margin-top: 11px;
+  text-align: center;
 }
 
 .expand__button {
@@ -73,10 +80,6 @@
 
 @media (min-width: $tablet) {
   .expand {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 166px;
     padding-bottom: 40px;
     box-sizing: border-box;
