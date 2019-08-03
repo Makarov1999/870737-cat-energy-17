@@ -66,6 +66,13 @@
 @media (min-width: $desktop) {
   .addit-catalog {
     width: $desktop;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .addit-catalog__title {
+    width: 100%;
   }
 
   .addit-catalog__item {

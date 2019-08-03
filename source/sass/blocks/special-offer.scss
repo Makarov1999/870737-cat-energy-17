@@ -61,9 +61,15 @@
 
 @media (min-width: $desktop) {
   .special-offer {
+    padding: 0;
+    justify-content: center;
     width: 245px;
     margin: 0;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
+  }
+
+  .special-offer__slogan {
+    text-align: center;
   }
 }

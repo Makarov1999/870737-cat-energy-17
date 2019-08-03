@@ -160,7 +160,7 @@
     padding-bottom: 61px;
     font-size: 16px;
     line-height: 24px;
-    max-width: 340px;
+    max-width: 354px;
   }
 
   .targets__link {
@@ -176,7 +176,8 @@
 
 @media (min-width: $desktop) {
   .targets {
-    width: 1360px;
+    box-sizing: border-box;
+    width: 1220px;
     margin: auto;
     margin-top: 80px;
   }
@@ -190,6 +191,7 @@
   }
 
   .targets__item {
+    box-sizing: border-box;
     margin-top: 0;
     width: 570px;
     padding-right: 54px;
