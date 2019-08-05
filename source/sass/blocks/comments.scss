@@ -1,4 +1,10 @@
 .comments {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-top: 17px;
   padding-bottom: 31px;
 }
 
@@ -12,7 +18,15 @@
 }
 
 .comments__field {
+  width: 100%;
+  box-sizing: border-box;
   resize: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
 
   &::placeholder {
     font-family: $font;

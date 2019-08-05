@@ -3,10 +3,17 @@
 }
 
 .form__submit-button {
+  margin-left: 20px;
+  margin-right: 20px;
   display: inline-block;
+  width: 100%;
   border: none;
   padding-top: 13px;
   padding-bottom: 11px;
-  padding-left: 78px;
-  padding-right: 78px;
+
+}
+
+.form__legend {
+  display: block;
+  text-align: center;
 }

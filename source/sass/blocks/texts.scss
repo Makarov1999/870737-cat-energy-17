@@ -1,4 +1,8 @@
 .texts {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 39px;
 }
 
@@ -14,16 +18,21 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 15px;
   color: #222222;
 }
 
 .texts__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
   padding-bottom: 14px;
 }
 
 .texts__field {
   padding: 15px;
   border: 1px solid #cdcdcd;
+  flex-grow: 1;
 
   &::placeholder {
     font-family: $font;
@@ -36,5 +45,30 @@
 
   &:active {
     border-color: $text_grey;
+  }
+
+  &:active + .texts__image {
+    fill: #68b738;
+  }
+}
+
+.texts__image {
+  position: absolute;
+
+
+  &--mail {
+    top: 15px;
+    right: 13px;
+    width: 18px;
+    height: 14px;
+    fill: #222222;
+  }
+
+  &--phone {
+    top: 13px;
+    right: 13px;
+    width: 21px;
+    height: 21px;
+    fill: #222222;
   }
 }

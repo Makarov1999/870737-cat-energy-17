@@ -16,9 +16,44 @@
 .checkboxes__item {
   margin: 0;
   padding: 0;
-  padding-bottom: 13px;
+  padding-bottom: 28px;
+  padding-left: 36px;
 }
 
 .checkboxes__title {
+  position: relative;
   @include generate_label();
+
+  &:before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: -36px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+  }
+}
+
+.checkboxes__field:checked + .checkboxes__title::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkboxes__field:hover + .checkboxes__title::before {
+  border-color: #bababa;
+}
+
+.checkboxes__field:focus + .checkboxes__title::before {
+  border-color: #bababa;
+}
+
+.checkboxes__field:active + .checkboxes__title::before {
+  opacity: 0.3;
+}
+
+.checkboxes__field:active + .checkboxes__title {
+  opacity: 0.3;
 }
