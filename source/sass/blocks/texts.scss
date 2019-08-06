@@ -72,3 +72,44 @@
     fill: #222222;
   }
 }
+
+@media (min-width: $tablet) {
+  .texts {
+    padding-top: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .texts__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .texts__field {
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+    padding-right: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .texts__caption {
+    margin-bottom: 70px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .texts {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .texts__wrapper {
+    width: 570px;
+  }
+}

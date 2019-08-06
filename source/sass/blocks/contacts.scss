@@ -19,6 +19,12 @@
   color: $text_grey;
 }
 
+@media (max-width: $desktop) {
+  .contacts--grey {
+    background-color: $bg_grey;
+  }
+}
+
 @media (min-width: $tablet) {
   .contacts {
     display: flex;

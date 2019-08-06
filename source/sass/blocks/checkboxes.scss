@@ -57,3 +57,39 @@
 .checkboxes__field:active + .checkboxes__title {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet) {
+  .checkboxes__caption {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 53px;
+  }
+
+  .checkboxes__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  .checkboxes__item {
+    width: 40%;
+    padding-bottom: 53px;
+    padding-left: 33px;
+  }
+
+  .checkboxes__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .checkboxes {
+    padding-right: 98px;
+  }
+
+  .checkboxes__item {
+    width: 219px;
+  }
+}

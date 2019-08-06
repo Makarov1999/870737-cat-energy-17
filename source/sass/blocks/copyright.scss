@@ -26,8 +26,29 @@
 
 .copyright__icon {
   position: absolute;
-  top: -7px;
-  right: 20px;
-  width: 27px;
-  height: 34px;
+  top: -12px;
+  right: 0;
+  fill: #666666;
+}
+
+@media (min-width: $tablet) {
+  .copyright__link {
+    padding-right: 50px;
+  }
+
+  .copyright__icon {
+    top: -7px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__link {
+    padding-right: 0;
+  }
+
+  .copyright__icon {
+    top: -8px;
+    right: -50px;
+  }
 }

@@ -17,3 +17,29 @@
   display: block;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .form__submit-button {
+    display: inline-block;
+    width: 283px;
+    margin-left: 70px;
+  }
+
+  .form__legend {
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    text-align: center;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .form__submit-button {
+    width: 568px;
+  }
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

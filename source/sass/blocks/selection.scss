@@ -1,9 +1,46 @@
+.selection__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  margin-left: 20px;
+  margin-bottom: 28px;
+}
+
 .selection__text {
   display: block;
+  margin-left: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $text_black;
   max-width: 230px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet) {
+  .selection__title {
+    margin-top: 63px;
+    margin-left: 32px;
+    margin-bottom: 53px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .selection__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 70px;
+    margin-bottom: 69px;
+    min-width: 330px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .selection__title {
+    margin-top: 81px;
+  }
+
+  .selection__text {
+    margin-left: 0;
+  }
 }
