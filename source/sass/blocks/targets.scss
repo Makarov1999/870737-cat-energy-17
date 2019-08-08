@@ -1,23 +1,26 @@
 .targets {
   box-sizing: border-box;
+  padding-bottom: 32px;
 }
 
 .targets__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 22px;
-  padding-right: 22px;
 }
 
 .targets__item {
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
-  padding-top: 22px;
-  padding-right: 21px;
+  padding-top: 39px;
+  padding-right: 36px;
   padding-bottom: 22px;
-  padding-left: 36px;
+  padding-left: 21px;
   background-color: $bg_grey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .targets__title {
@@ -78,12 +81,12 @@
   padding: 0;
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
+  margin-bottom: 20px;
 }
 
 .targets__link {
   display: inline-block;
   position: relative;
-  padding-top: 20px;
   font-family: $font;
   font-size: 16px;
   line-height: 16px;
@@ -97,7 +100,7 @@
     position: absolute;
     width: 25px;
     height: 12px;
-    top: 22px;
+    top: 3px;
     left: 95px;
     background-image: url("../img/icon-right-arrow-long.svg");
   }
@@ -122,16 +125,23 @@
 }
 
 @media (min-width: $tablet) {
+  .targets {
+    padding-bottom: 51px;
+  }
+
   .targets__item {
     padding-top: 81px;
     padding-bottom: 62px;
     padding-left: 55px;
   }
 
+
   .targets__title {
     padding-left: 0;
     font-size: 36px;
     line-height: 37px;
+    margin-bottom: 26px;
+    padding-bottom: 0;
 
     &::before {
       width: 200px;
@@ -157,7 +167,8 @@
 
   .targets__description {
     border: none;
-    padding-bottom: 61px;
+    padding-bottom: 0;
+    margin-bottom: 61px;
     font-size: 16px;
     line-height: 24px;
     max-width: 354px;
@@ -168,8 +179,8 @@
     line-height: 20px;
 
     &::after {
-      top: 25px;
-      left: 116px;
+      top: 4px;
+      left: 120px;
     }
   }
 }
@@ -195,6 +206,7 @@
     margin-top: 0;
     width: 570px;
     padding-right: 54px;
+    margin-bottom: 0;
   }
 
   .targets__title {

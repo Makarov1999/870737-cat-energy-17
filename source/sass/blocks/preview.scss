@@ -1,23 +1,21 @@
 .preview {
-  display: flex;
+  position: relative;
+  z-index: -2;
   box-sizing: border-box;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding-top: 29px;
-  padding-right: 20px;
-  padding-left: 20px;
   background-color: $bg_green;
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 60%, #ffffff 60%);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 69%, #ffffff 69%);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto, 100% 100%;
+  margin-bottom: 22px;
 }
 
 .preview__title {
   margin: 0;
   padding: 0;
-  padding-bottom: 19px;
+  margin-bottom: 19px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -33,18 +31,28 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 29px + 42px;
+  margin-bottom: 302px;
 }
 
 .preview__link {
+  display: block;
   width: 100%;
   @include generate_link();
   padding-top: 14px;
   padding-bottom: 11px;
 }
 
+.preview__image {
+  position: absolute;
+  top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (min-width: $tablet) {
   .preview {
+    padding-top: 0;
+    display: flex;
     position: relative;
     justify-content: flex-start;
     align-items: flex-start;
@@ -60,10 +68,11 @@
     line-height: 60px;
     text-align: left;
     color: #111111;
+    margin-bottom: 33px;
   }
 
   .preview__slogan {
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -71,7 +80,8 @@
   }
 
   .preview__image {
-    position: absolute;
+    z-index: -1;
+    top: 197px;
   }
 
   .preview__link {
@@ -88,7 +98,7 @@
     align-items: flex-start;
     position: relative;
     width: 100%;
-    min-height: 550px;
+    min-height: 480px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
@@ -101,12 +111,12 @@
     &::after {
       content: "";
       position: absolute;
-      top: -149px;
+      top: -216px;
       left: 50%;
       background-image: url("../img/index-background-desktop@1x.jpg");
-      width: 50%;
+      width: 50vw;
       height: 696px;
-      z-index: -1;
+      z-index: -10;
     }
   }
 
@@ -117,5 +127,9 @@
 
   .preview__title {
     max-width: 420px;
+  }
+
+  .preview__slogan {
+    margin-bottom: 53px;
   }
 }
