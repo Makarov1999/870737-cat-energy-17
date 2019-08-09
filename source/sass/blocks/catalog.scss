@@ -1,3 +1,7 @@
+.catalog {
+  padding-bottom: 31px;
+}
+
 .catalog__title {
   margin: 0;
   padding: 0;
@@ -31,8 +35,7 @@
 @media (min-width: $tablet) {
   .catalog {
     box-sizing: border-box;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-bottom: 71px;
   }
 
   .catalog__list {
@@ -40,7 +43,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding-bottom: 16px;
   }
 
   .catalog__item {
@@ -60,6 +62,6 @@
 @media (min-width: $desktop) {
   .catalog {
     width: $desktop;
-    margin: 0 auto;
+    padding-bottom: 21px;
   }
 }

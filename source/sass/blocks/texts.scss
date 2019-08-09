@@ -1,9 +1,11 @@
 .texts {
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 39px;
+  padding-bottom: 23px;
+
+  &:nth-child(2) {
+    padding-bottom: 31px;
+  }
 }
 
 .texts__caption {
@@ -12,6 +14,7 @@
   font-size: 24px;
   line-height: 24px;
   color: $text_black;
+  padding-bottom: 30px;
 }
 
 .texts__title {
@@ -27,6 +30,10 @@
   display: flex;
   align-items: center;
   padding-bottom: 14px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .texts__field {
@@ -76,8 +83,10 @@
 @media (min-width: $tablet) {
   .texts {
     padding-top: 0;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-bottom: 72px;
+    &:nth-child(2) {
+      padding-bottom: 69px;
+    }
   }
 
   .texts__title {
@@ -98,6 +107,7 @@
   }
 
   .texts__caption {
+    padding-bottom: 0;
     margin-bottom: 70px;
     font-size: 36px;
     line-height: 36px;
@@ -108,8 +118,19 @@
   .texts {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
   }
+
   .texts__wrapper {
     width: 570px;
+    padding-bottom: 20px;
+
+    &:nth-child(2) {
+      padding-bottom: 71px;
+    }
+
+    &--contact {
+      padding-bottom: 0;
+    }
   }
 }

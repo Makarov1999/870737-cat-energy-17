@@ -1,3 +1,9 @@
+.checkboxes {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 43px;
+}
+
 .checkboxes__list {
   margin: 0;
   padding: 0;
@@ -5,7 +11,7 @@
 }
 
 .checkboxes__caption {
-  padding-bottom: 31px;
+  padding-bottom: 39px;
   font-family: $font;
   font-weight: 400;
   font-size: 24px;
@@ -14,10 +20,15 @@
 }
 
 .checkboxes__item {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   padding-bottom: 28px;
-  padding-left: 36px;
+  padding-left: 46px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .checkboxes__title {
@@ -29,7 +40,7 @@
     position: absolute;
     box-sizing: border-box;
     top: 0;
-    left: -36px;
+    left: -46px;
     width: 30px;
     height: 30px;
     border: 1px solid #cdcdcd;
@@ -62,7 +73,7 @@
   .checkboxes__caption {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 53px;
+    padding-bottom: 64px;
   }
 
   .checkboxes__list {
@@ -75,21 +86,30 @@
   .checkboxes__item {
     width: 40%;
     padding-bottom: 53px;
-    padding-left: 33px;
+    padding-left: 60px;
   }
 
   .checkboxes__title {
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -4px;
+      left: -60px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .checkboxes {
     padding-right: 98px;
+    padding-bottom: 72px;
   }
 
   .checkboxes__item {
     width: 219px;
+    padding-bottom: 0;
   }
 }

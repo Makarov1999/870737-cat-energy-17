@@ -53,7 +53,7 @@
       margin-right: 0;
     }
 
-    &--selected, &--selected--main {
+    &--selected, &--main {
       border-bottom: 2px solid $bg_green;
     }
   }
@@ -71,7 +71,7 @@
     padding-top: 24px;
   }
   .site-list__item {
-    &--selected--main {
+    &--main {
       border-bottom: 2px solid #ffffff;
     }
   }

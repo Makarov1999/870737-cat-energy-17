@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-top: 17px;
   padding-bottom: 31px;
 }
 
@@ -23,7 +22,7 @@
   padding: 0;
   padding-top: 15px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 12px;
   padding-bottom: 15px;
 
   &::placeholder {
@@ -38,8 +37,7 @@
 
 @media (min-width: $tablet) {
   .comments {
-    margin-top: 97px;
-    padding-bottom: 69px;
+    padding-bottom: 71px;
   }
 
   .comments__caption {
