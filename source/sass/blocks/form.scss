@@ -21,6 +21,11 @@
 }
 
 @media (min-width: $tablet) {
+  .form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .form__submit-button {
     display: inline-block;
     width: 283px;
@@ -41,6 +46,11 @@
 }
 
 @media (min-width: $desktop) {
+  .form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .form__submit-button {
     width: 568px;
     margin-right: 82px;

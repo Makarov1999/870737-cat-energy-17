@@ -20,12 +20,13 @@
 @media (min-width: $tablet) {
   .selection {
     margin-bottom: 72px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .selection__title {
     padding: 0;
     border: none;
-    margin-left: -38px;
     margin-bottom: 53px;
     font-size: 60px;
     line-height: 60px;
@@ -37,16 +38,12 @@
     line-height: 30px;
     margin-bottom: 69px;
     min-width: 330px;
+    margin-left: 40px;
   }
 }
 
 @media (min-width: $desktop) {
-  .selection__title {
-    margin-left: 0;
-
-  }
-
   .selection__text {
-
+    margin-left: 0;
   }
 }
