@@ -1,6 +1,11 @@
 .site-list {
+  display: none;
   position: relative;
   z-index: 3;
+
+  &--open {
+    display: block;
+  }
 }
 
 .site-list__item {
@@ -34,6 +39,7 @@
 
 @media (min-width: $tablet) {
   .site-list {
+    display: flex;
     padding-top: 23px;
     padding-bottom: 7px;
   }

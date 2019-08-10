@@ -17,12 +17,18 @@
   right: 0;
   border: none;
   background-color: transparent;
-}
 
-.main-nav__toggle--close {
-  width: 19px;
-  height: 19px;
-  background-image: url("../img/icon-close.svg");
+  &--close {
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/icon-close.svg");
+  }
+
+  &--menu {
+    width: 25px;
+    height: 19px;
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
 }
 
 @media (min-width: $tablet) {

@@ -1,0 +1,50 @@
+.slider-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-control__toggle {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.slider-control__scale {
+  position: relative;
+  margin-left: 18px;
+  margin-right: 18px;
+  width: 84px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.slider-control__runner {
+  position: absolute;
+  top: 4px;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 3px;
+  &--middle {
+    left: 6px;
+  }
+
+  &--begin {
+    left: 6px;
+  }
+
+  &--end {
+    left: 44px;
+  }
+}

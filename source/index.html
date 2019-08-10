@@ -13,7 +13,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--close" aria-label="Меню"></button>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--open">
           <li class="site-list__item site-list__item--main"><a class="site-list__link">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог</a></li>
           <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
@@ -69,18 +69,30 @@
           <div class="example__list">
             <div class="example__item">
               <b class="example__value">5 кг</b>
-              <span class="example__legend">Снижение веса</span>
+              <span class="example__legend">снижение веса</span>
             </div>
             <div class="example__item">
               <b class="example__value">60 дней</b>
-              <span class="example__legend">Затрачено времени</span>
+              <span class="example__legend">затрачено времени</span>
             </div>
           </div>
           <b class="example__total">Затраты на питание: 15 000 руб.</b>
-          <div class="example__slider">
-            <div class="example__slide example__slide--active"><img src="" alt=""></div>
-            <div class="example__slide"><img src="" alt=""></div>
-            <button class="example--toggle"></button>
+          <div class="example__slider slider">
+            <div class="slider__wrapper">
+              <div class="example__slide example__slide--before">
+                <img src="img/before-mobile@1x.png" alt="До">
+              </div>
+              <div class="example__slide example__slide--after">
+                <img src="img/after-mobile@1x.png" alt="После">
+              </div>
+            </div>
+            <div class="example__wrapper slider-control">
+              <button class="slider-control__toggle">Было</button>
+              <div class="slider-control__scale">
+                <div class="slider-control__runner slider-control__runner--middle"></div>
+              </div>
+              <button class="slider-control__toggle">Стало</button>
+            </div>
           </div>
         </div>
       </section>
@@ -156,5 +168,6 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

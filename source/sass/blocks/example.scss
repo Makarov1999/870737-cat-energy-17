@@ -1,7 +1,7 @@
 .example {
   padding-top: 33px;
-  padding-left: 20px;
   background-color: $bg_grey;
+  padding-bottom: 39px;
 }
 
 .example__title {
@@ -12,14 +12,53 @@
   @include big_caption();
 }
 
+.example__slider {
+  position: relative;
+}
+
+.example__slide {
+  &--before {
+    position: relative;
+  }
+
+  &--after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &--end {
+    z-index: 1000;
+  }
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 38px;
+}
+
 .example__description {
+  font-size: 14px;
+  line-height: 18px;
+  width: 215px;
+  text-align: left;
   margin: 0;
   padding: 0;
   padding-bottom: 27px;
 }
 
 .example__item {
-  padding: 17px 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 }
 
 .example__value {
@@ -31,10 +70,18 @@
 }
 
 .example__legend {
+  position: absolute;
+  top: 43px;
+  left: 18px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: block;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   color: $text_grey;
+  max-width: 57px;
+  background-color: $bg_grey;
 }
 
 .example__total {
