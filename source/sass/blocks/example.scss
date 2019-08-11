@@ -120,6 +120,7 @@
   }
 
   .example__description {
+    flex-grow: 1;
     font-size: 16px;
     line-height: 24px;
     width: 564px;
@@ -179,6 +180,12 @@
 }
 
 @media (min-width: $desktop) {
+  .example {
+    background-color: $bg_grey;
+    padding-top: 0;
+    border-top: none;
+  }
+
   .example__caption {
     margin-left: auto;
     margin-right: auto;
@@ -202,6 +209,7 @@
   }
 
   .example__description {
+    flex-grow: 0;
     width: 377px;
     padding-bottom: 71px;
   }

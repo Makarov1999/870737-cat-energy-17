@@ -43,6 +43,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+    max-width: 900px;
   }
 
   .catalog__item {
@@ -68,5 +69,6 @@
   .catalog__list {
     justify-content: flex-start;
     margin-left: -80px;
+    max-width: none;
   }
 }

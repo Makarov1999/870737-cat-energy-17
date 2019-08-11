@@ -65,6 +65,7 @@
   .preview__title {
     font-size: 60px;
     padding-right: 170px;
+    max-width: 430px;
     line-height: 60px;
     text-align: left;
     color: #111111;
@@ -123,10 +124,6 @@
   .preview__image {
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .preview__title {
-    max-width: 420px;
   }
 
   .preview__slogan {
