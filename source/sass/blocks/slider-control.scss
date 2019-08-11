@@ -30,6 +30,7 @@
 }
 
 .slider-control__runner {
+  box-sizing: border-box;
   position: absolute;
   top: 4px;
   width: 35px;
@@ -46,5 +47,49 @@
 
   &--end {
     left: 44px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .slider-control__toggle {
+    font-size: 20px;
+  }
+
+  .slider-control__scale {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+  }
+
+  .slider-control__runner {
+    width: 34px;
+    height: 34px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    top: -14px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: $bg_green;
+      border-radius: 50%;
+    }
+
+    &--middle {
+      left: 46%;
+    }
+
+    &--begin {
+      left: 0;
+    }
+
+    &--end {
+      left: 92%;
+    }
   }
 }

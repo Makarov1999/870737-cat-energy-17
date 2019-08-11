@@ -64,4 +64,9 @@
     width: $desktop;
     padding-bottom: 21px;
   }
+
+  .catalog__list {
+    justify-content: flex-start;
+    margin-left: -80px;
+  }
 }
