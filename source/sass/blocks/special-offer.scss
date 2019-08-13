@@ -1,11 +1,81 @@
 .special-offer {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 190px;
+  padding-bottom: 43px;
   background-color: $bg_green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 }
 
 .special-offer__slogan {
+  max-width: 149px;
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/icon-gift.svg");
+  }
+}
+
+@media (min-width: $tablet) {
+  .special-offer {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 708px;
+    background-color: $bg_green;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    padding-top: 75px;
+    padding-bottom: 69px;
+    padding-right: 125px;
+  }
+
+  .special-offer__slogan {
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      top: 65px;
+      left: 91px;
+      transform: none;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .special-offer {
+    margin: 0;
+    padding: 0;
+    min-height: 289px;
+    padding-top: 190px;
+    padding-bottom: 43px;
+    justify-content: center;
+    width: 245px;
+    margin-bottom: 38px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .special-offer__slogan {
+    text-align: center;
+  }
 }

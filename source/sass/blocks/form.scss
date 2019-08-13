@@ -4,9 +4,65 @@
 
 .form__submit-button {
   display: inline-block;
+  width: 100%;
   border: none;
   padding-top: 13px;
   padding-bottom: 11px;
-  padding-left: 78px;
-  padding-right: 78px;
+  margin-bottom: 23px;
+
+}
+
+.form__legend {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 34px;
+}
+
+@media (min-width: $tablet) {
+  .form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form__submit-button {
+    display: inline-block;
+    width: 283px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-right: 61px;
+  }
+
+  .form__legend {
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form__submit-button {
+    width: 568px;
+    margin-right: 82px;
+  }
+
+  .form__wrapper {
+    padding-bottom: 73px;
+    display: flex;
+    justify-content: space-between;
+
+    &:nth-child(2) {
+      padding-bottom: 0;
+    }
+  }
 }

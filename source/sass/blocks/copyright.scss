@@ -1,7 +1,54 @@
 .copyright__link {
+  position: relative;
+  display: block;
   font-family: $font;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: $text_grey;
+
+  &:hover .copyright__icon {
+    fill: #68b738;
+  }
+
+  &:focus .copyright__icon {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .copyright__icon {
+    fill: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.copyright__icon {
+  position: absolute;
+  top: -12px;
+  right: 0;
+  fill: #666666;
+}
+
+@media (min-width: $tablet) {
+  .copyright__link {
+    padding-right: 50px;
+  }
+
+  .copyright__icon {
+    top: -7px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__link {
+    padding-right: 0;
+  }
+
+  .copyright__icon {
+    top: -8px;
+    right: -35px;
+  }
 }

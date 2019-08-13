@@ -1,4 +1,5 @@
 .page-footer {
+  position: relative;
   background-color: $bg_grey;
 }
 
@@ -10,18 +11,64 @@
   background-color: #ffffff;
 }
 
+.page-footer__map {
+  width: 100%;
+  min-height: 372px;
+  background-image: url("../img/bg-map-mobile_1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .page-footer__logo {
-  display: inline-block;
+  display: block;
+  text-align: center;
   padding-top: 39px;
-  padding-bottom: 32px;
-  padding-left: 96px;
-  padding-right: 96px;
+  padding-bottom: 31px;
 }
 
 .page-footer__social {
-  padding: 23px 96px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 31px;
 }
 
 .page-footer__copyright {
-  padding: 22px 20px;
+  position: relative;
+  padding-bottom: 31px;
+}
+
+@media (min-width: $tablet) {
+  .page-footer__map {
+    background-image: url("../img/bg-map-tablet_1x.png");
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 63px;
+    padding-bottom: 64px;
+  }
+
+  .page-footer__logo {
+    padding: 0;
+  }
+
+  .page-footer__social {
+    padding: 0;
+  }
+
+  .page-footer__copyright {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer__wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .page-footer__map {
+    background-image: url("../img/bg-map-desktop_1x.png");
+  }
 }

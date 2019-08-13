@@ -4,19 +4,35 @@
   width: 100%;
   background-color: #ffffff;
   padding-top: 11px;
-  padding-bottom: 15px;
 }
 
 .page-header__logo {
-  margin-left: 20px;
+  display: inline-block;
+  padding-bottom: 15px;
 }
 
 @media (min-width: $tablet) {
   .page-header {
+    padding-top: 24px;
+    padding-bottom: 61px;
     display: flex;
     flex-shrink: 0;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    padding-top: 53px;
+    padding-bottom: 0;
+    margin-bottom: 83px;
+    &--main-page {
+      color: #ffffff;
+    }
+  }
+
+  .page-header__logo {
+    vertical-align: bottom;
+    padding-bottom: 0;
   }
 }

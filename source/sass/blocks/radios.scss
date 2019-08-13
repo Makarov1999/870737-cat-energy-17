@@ -1,3 +1,115 @@
+.radios {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 29px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 31px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.radios__wrapper {
+  padding-left: 46px;
+  padding-bottom: 26px;
+}
+
 .radios__title {
+  position: relative;
   @include generate_label();
+  &::before {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -49px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $bg_green;
+  }
+}
+
+.radios__field:checked + .radios__title::after {
+  display: block;
+}
+
+.radios__field:hover + .radios__title::before {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.radios__field:focus + .radios__title::before {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.radios__field:active + .radios__title::before {
+  border: 2px solid #68b738;
+}
+
+@media (min-width: $tablet) {
+  .radios {
+    padding-left: 88px;
+    padding-top: 36px;
+    border: 1px solid #cdcdcd;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 79px;
+    padding-right: 0;
+    padding-bottom: 33px;
+  }
+
+
+  .radios__wrapper {
+    padding-left: 0;
+    padding-bottom: 34px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .radios__title {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      left: -59px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      top: 7px;
+      left: -48px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .radios {
+    width: 570px;
+    margin: 0;
+  }
+
+  .radios__wrapper {
+    padding-bottom: 33px;
+  }
 }

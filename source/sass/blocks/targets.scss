@@ -1,28 +1,32 @@
 .targets {
-  margin-top: 22px;
+  box-sizing: border-box;
+  padding-bottom: 32px;
 }
 
 .targets__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 22px;
-  padding-right: 22px;
 }
 
 .targets__item {
-  margin: 0;
+  margin-bottom: 20px;
   padding: 0;
-  padding-top: 22px;
-  padding-right: 21px;
+  padding-top: 39px;
+  padding-right: 36px;
   padding-bottom: 22px;
-  padding-left: 36px;
+  padding-left: 21px;
   background-color: $bg_grey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .targets__title {
   margin: 0;
   padding: 0;
+  position: relative;
   padding-bottom: 25px;
   padding-left: 71px;
   font-family: $font;
@@ -32,18 +36,215 @@
   text-align: left;
   text-transform: uppercase;
   color: $text_black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: $bg_green;
+    border-radius: 50%;
+    top: -10px;
+    left: 0;
+    z-index: 1;
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 49px;
+    top: -10px;
+    left: 10px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+  }
+
+  &--pro::after {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    top: 4px;
+    left: -12px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+  }
 }
 
 .targets__description {
   margin: 0;
   padding: 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 20px;
 }
 
 .targets__link {
+  display: inline-block;
+  position: relative;
   font-family: $font;
   font-size: 16px;
   line-height: 16px;
   text-align: left;
   text-transform: uppercase;
   color: $text_black;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    top: 3px;
+    left: 95px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+  }
+
+  &:hover::after {
+    width: 34px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:focus::after {
+    width: 34px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .targets {
+    padding-bottom: 51px;
+  }
+
+  .targets__item {
+    padding-top: 81px;
+    padding-bottom: 62px;
+    padding-left: 55px;
+  }
+
+
+  .targets__title {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 26px;
+    padding-bottom: 0;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 12px;
+      left: 62%;
+    }
+
+    &--slim::after {
+      width: 141px;
+      height: 194px;
+      top: 0;
+      left: 64%;
+    }
+
+    &--pro::after {
+      width: 268px;
+      height: 113px;
+      top: 50px;
+      left: 55%;
+    }
+  }
+
+  .targets__description {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 61px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 354px;
+  }
+
+  .targets__link {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      top: 4px;
+      left: 120px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .targets {
+    box-sizing: border-box;
+    width: 1220px;
+    margin: auto;
+    margin-top: 80px;
+    padding-bottom: 79px;
+  }
+
+  .targets__list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .targets__item {
+    box-sizing: border-box;
+    margin-top: 0;
+    width: 570px;
+    padding-right: 54px;
+    margin-bottom: 0;
+  }
+
+  .targets__title {
+    padding-left: 161px;
+    padding-bottom: 75px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: -40px;
+      left: -5px;
+    }
+
+    &--slim::after {
+      width: 71px;
+      height: 91px;
+      top: -41px;
+      left: 9px;
+    }
+
+    &--pro::after {
+      width: 134px;
+      height: 57px;
+      top: -17px;
+      left: -21px;
+    }
+  }
+
+  .targets__description {
+    padding-bottom: 36px;
+  }
+
+  .targets__link {
+    padding-top: 0;
+
+    &::after {
+      top: 5px;
+    }
+  }
 }

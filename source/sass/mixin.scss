@@ -10,8 +10,6 @@
 @mixin generate_link() {
   font-family: $font;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -21,7 +19,8 @@
 @mixin generate_label {
   font-family: $font;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 18px;
   color: #222222;
+  text-transform: uppercase;
 }

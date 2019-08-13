@@ -1,11 +1,10 @@
 .addit-catalog {
-  padding-top: 31px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 39px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
 }
 
 .addit-catalog__title {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-bottom: 30px;
@@ -14,12 +13,25 @@
   line-height: 24px;
   text-align: left;
   color: $text_black;
+  margin-right: -20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100vw;
+    height: 3px;
+    background-color: $bg_green;
+    z-index: -1;
+  }
 }
 
 .addit-catalog__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 39px;
 }
 
 .addit-catalog__item {
@@ -28,12 +40,104 @@
   padding-top: 14px;
   padding-bottom: 17px;
   border-top: 1px solid $bg_grey;
+
+  &:last-child {
+    border-bottom: 1px solid $bg_grey;
+  }
 }
 
 .addit-catalog__button {
+  width: 100%;
   display: inline-block;
   padding-top: 13px;
-  padding-right: 109px;
   padding-bottom: 12px;
-  padding-left: 109px;
+}
+
+@media (min-width: $tablet) {
+  .addit-catalog {
+    margin-bottom: 76px;
+  }
+
+  .addit-catalog__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .addit-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 75px;
+    margin-left: -30px;
+
+    &::after {
+      top: 23px;
+    }
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: $bg_green;
+      margin-top: 20px;
+      margin-right: 23px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .addit-catalog {
+    width: $desktop;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+
+  .addit-catalog__title {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    margin-left: -40px;
+
+    &::before {
+      margin-top: 0;
+      margin-right: 0;
+      position: absolute;
+      top: 25px;
+      left: 100%;
+      z-index: -1;
+      width: 100vw;
+    }
+
+    &::after {
+      position: absolute;
+      top: 25px;
+      left: -100%;
+      z-index: -1;
+      width: 100vw;
+    }
+  }
+
+  .addit-catalog__item {
+    justify-content: space-between;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+    width: 895px;
+    padding-top: 27px;
+    padding-bottom: 23px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .addit-catalog__button {
+    margin-left: 39px;
+    width: 245px;
+  }
 }

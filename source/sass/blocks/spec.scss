@@ -1,0 +1,13 @@
+.spec__field {
+  padding-right: 64px;
+}
+
+@media (min-width: $tablet) {
+  .spec__row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+}
