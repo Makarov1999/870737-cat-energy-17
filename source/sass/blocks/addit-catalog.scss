@@ -4,6 +4,7 @@
 }
 
 .addit-catalog__title {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-bottom: 30px;
@@ -12,6 +13,18 @@
   line-height: 24px;
   text-align: left;
   color: $text_black;
+  margin-right: -20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100vw;
+    height: 3px;
+    background-color: $bg_green;
+    z-index: -1;
+  }
 }
 
 .addit-catalog__list {
@@ -60,6 +73,20 @@
     font-size: 36px;
     line-height: 36px;
     padding-bottom: 75px;
+    margin-left: -30px;
+
+    &::after {
+      top: 23px;
+    }
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: $bg_green;
+      margin-top: 20px;
+      margin-right: 23px;
+    }
   }
 }
 
@@ -73,7 +100,28 @@
   }
 
   .addit-catalog__title {
-    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    margin-left: -40px;
+
+    &::before {
+      margin-top: 0;
+      margin-right: 0;
+      position: absolute;
+      top: 25px;
+      left: 100%;
+      z-index: -1;
+      width: 100vw;
+    }
+
+    &::after {
+      position: absolute;
+      top: 25px;
+      left: -100%;
+      z-index: -1;
+      width: 100vw;
+    }
   }
 
   .addit-catalog__item {

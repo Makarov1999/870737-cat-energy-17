@@ -1,5 +1,13 @@
 
 @media (min-width: $desktop) {
+  .page-main {
+    overflow: hidden;
+
+    &--main {
+      overflow: visible;
+    }
+  }
+
   .page-main__wrapper {
     display: flex;
     justify-content: space-between;
