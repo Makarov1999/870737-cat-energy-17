@@ -9,7 +9,11 @@
   <body>
     <header class="page-header container">
       <a href="index.html" class="page-header__logo">
-        <img src="img/logo-mobile.svg" alt="Логотип Кэт-энерджи" width="191" width="139">
+        <picture>
+          <source media="(min-width: 1260px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" >
+          <img src="img/logo-mobile.svg" alt="Логотип Кэт-энерджи">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--close" aria-label="Меню"></button>
@@ -85,7 +89,7 @@
             <textarea  class="comments__field" rows="8" cols="80" id="textarea" name="textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__item checkboxes">
-            <legend class="checkboxes__caption title">Дополнительно</legend>
+            <legend class="checkboxes__caption title"><span class="title__wrapper">Дополнительно</span></legend>
             <ul class="checkboxes__list">
               <li class="checkboxes__item">
                 <input class="checkboxes__field visually-hidden" type="checkbox" id="check1" name="checkboxes" value="Сахарозаменитель" checked>

@@ -12,6 +12,15 @@
   margin-bottom: 22px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .preview {
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #64a83b 69%, #ffffff 69%);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain, 100% 100%;
+  }
+}
+
 .preview__title {
   margin: 0;
   padding: 0;
@@ -60,6 +69,8 @@
     padding-left: 120px;
     background-color: #ffffff;
     background-image: none;
+    margin-bottom: 100px;
+
   }
 
   .preview__title {
@@ -119,11 +130,27 @@
       height: 696px;
       z-index: -10;
     }
+
   }
 
   .preview__image {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .preview__slogan {
+    margin-bottom: 53px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .preview::after {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+  .preview__image {
+    top: 0;
+    left: 58.5%;
   }
 
   .preview__slogan {
