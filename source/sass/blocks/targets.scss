@@ -212,7 +212,7 @@
 
   .targets__title {
     padding-left: 161px;
-    padding-bottom: 75px;
+    margin-bottom: 80px;
 
     &::before {
       width: 100px;
@@ -238,6 +238,7 @@
 
   .targets__description {
     padding-bottom: 36px;
+    margin-bottom: 0;
   }
 
   .targets__link {

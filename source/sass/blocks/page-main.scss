@@ -1,10 +1,8 @@
-@media (min-width: $desktop) {
-  .page-main {
-    overflow: hidden;
+.page-main {
+  overflow: hidden;
 
-    &--main {
-      overflow: visible;
-    }
+  &--main {
+    overflow: visible;
   }
 
   .page-main__wrapper {
