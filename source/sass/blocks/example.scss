@@ -1,4 +1,6 @@
 .example {
+  position: relative;
+  z-index: -1;
   padding-top: 33px;
   background-color: $bg_grey;
   padding-bottom: 39px;
@@ -26,7 +28,7 @@
 
   img {
     position: absolute;
-
+    z-index: 10;
   }
 
   &--before {
@@ -52,6 +54,7 @@
 .example__list {
   display: flex;
   justify-content: space-between;
+  width: 280px;
   padding-bottom: 38px;
 }
 
@@ -98,6 +101,13 @@
   color: $text_grey;
   max-width: 57px;
   background-color: $bg_grey;
+}
+
+.example__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -165,26 +175,65 @@
 
 
   .example__intro {
+    position: relative;
+    z-index: -20;
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 265px;
+    padding-bottom: 80px;
     background-color: #ffffff;
   }
 
+  .example__slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #ffffff 169px, $bg_grey 169px);
+  }
+
   .example__slide {
-    width: 600px;
+    width: 690px;
+    height: 517px;
+
+    img {
+      position: absolute;
+      z-index: 10;
+    }
+
+    &--before {
+      flex-shrink: 0;
+      width: 50%;
+
+      img {
+        top: 0;
+        left: 0
+      }
+
+    }
+
+    &--after {
+
+      img {
+        top: 0;
+        right: 0;
+      }
+      width: 100%;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .example {
+    background-image: linear-gradient(to bottom, #ffffff 127px, $bg_grey 127px);
     background-color: $bg_grey;
     padding-top: 0;
     border-top: none;
   }
+
 
   .example__caption {
     margin-left: auto;
@@ -195,6 +244,7 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
   }
@@ -223,7 +273,9 @@
   }
 
   .example__slider {
+    background-image: none;
     width: 636px;
     flex-grow: 1;
+    margin-top: -125px;
   }
 }
