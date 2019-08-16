@@ -57,6 +57,12 @@
     }
   }
 
+  .product__image {
+    &--small {
+      padding-top: 36px;
+    }
+  }
+
   .product__table {
     width: 249px;
     font-size: 16px;
