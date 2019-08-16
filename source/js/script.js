@@ -24,21 +24,3 @@ menuButton.addEventListener("click", function(evt) {
     menuList.classList.remove("site-list--open");
   }
 });
-
-  sliderBeforeButton.addEventListener("click", function() {
-    if (!slide.classList.contains("js-before--active") && !slide.classList.contain("js-after--active")) {
-      slide.classList.add("js-before--active");
-    } else if (slide.classList.contains("js-after--active")) {
-      slide.classList.remove("js-after--active");
-      slide.classList.add("js-before--active")
-    }
-  });
-
-  sliderAfterButton.addEventListener("click", function() {
-    if (!slide.classList.contains("js-before--active") && !slide.classList.contain("js-after--active")) {
-      slide.classList.add("js-after--active");
-    } else if (slide.classList.contains("js-before--active")) {
-      slide.classList.remove("js-before--active");
-      slide.classList.add("js-after--active")
-    }
-  });
