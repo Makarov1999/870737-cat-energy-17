@@ -9,6 +9,18 @@
 .page-header__logo {
   display: inline-block;
   padding-bottom: 15px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet) {

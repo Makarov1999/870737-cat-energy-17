@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт-энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a44a4cda-457c-46f7-8eb6-67f84b41fcec&lang=ru_RU"></script>
   </head>
   <body>
     <header class="page-header page-header--main-page container">
@@ -32,9 +33,9 @@
           <picture>
             <source media="(min-width: 1260px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x,  img/index-can-tablet@2x.jpg 2x">
-            <img class="preview__image" srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" alt="Банка с кормом">
+            <img class="preview__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@1x.png 1x, img/index-can-mobile@2x.png 2x" alt="Банка с кормом">
           </picture>
-          <a href="catalog.html" class="preview__link btn">Подобрать программу</a>
+          <a href="form.html" class="preview__link btn">Подобрать программу</a>
         </div>
       </section>
       <section class="targets container">
@@ -71,54 +72,52 @@
         </ol>
       </section>
       <section class="example">
-        <div class="example__caption">
-          <h2 class="example__title basic-caption">Живой пример</h2>
-        </div>
         <div class="desktop-container">
-          <div class="example__content">
-            <div class="example__intro">
-              <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-              <div class="example__list">
-                <div class="example__item">
-                  <b class="example__value">5 кг</b>
-                  <span class="example__legend example__legend--weight">снижение веса</span>
+          <h2 class="example__title basic-caption">Живой пример</h2>
+            <div class="example__content">
+              <div class="example__intro">
+                <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+                <div class="example__list">
+                  <div class="example__item">
+                    <b class="example__value">5 кг</b>
+                    <span class="example__legend example__legend--weight">снижение веса</span>
+                  </div>
+                  <div class="example__item">
+                    <b class="example__value">60 дней</b>
+                    <span class="example__legend example__legend--time">затрачено времени</span>
+                  </div>
                 </div>
-                <div class="example__item">
-                  <b class="example__value">60 дней</b>
-                  <span class="example__legend example__legend--time">затрачено времени</span>
+                <div class="example__total total">
+                  <b class="total__item">Затраты на питание: </b>
+                  <b class="total__item">15 000 руб.</b>
                 </div>
               </div>
-              <div class="example__total total">
-                <b class="total__item">Затраты на питание: </b>
-                <b class="total__item">15 000 руб.</b>
+              <div class="example__slider slider">
+                <div class="slider__wrapper">
+                  <div class="example__slide example__slide--before">
+                    <picture>
+                      <source media="(min-width: 1260px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x" >
+                      <img src="img/before-mobile@1x.png" srcset="img/before-mobile@1x.png, img/before-mobile@2x.png 2x" alt="До">
+                    </picture>
+                  </div>
+                  <div class="example__slide example__slide--after">
+                    <picture>
+                      <source media="(min-width: 1260px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x" >
+                      <img src="img/after-mobile@1x.png" srcset="img/after-mobile@1x.png, img/after-mobile@2x.png 2x" alt="После">
+                    </picture>
+                  </div>
+                </div>
+                <div class="example__wrapper slider-control">
+                  <button class="slider-control__toggle slider-control__toggle--before">Было</button>
+                  <div class="slider-control__scale">
+                    <button class="slider-control__runner slider-control__runner--middle"></button>
+                  </div>
+                  <button class="slider-control__toggle slider-control__toggle--after">Стало</button>
+                </div>
               </div>
             </div>
-            <div class="example__slider slider">
-              <div class="slider__wrapper">
-                <div class="example__slide example__slide--before">
-                  <picture>
-                    <source media="(min-width: 1260px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x" >
-                    <img srcset="img/before-mobile@1x.png, img/before-mobile@2x.png 2x" alt="До">
-                  </picture>
-                </div>
-                <div class="example__slide example__slide--after">
-                  <picture>
-                    <source media="(min-width: 1260px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x" >
-                    <img srcset="img/after-mobile@1x.png, img/after-mobile@2x.png 2x" alt="После">
-                  </picture>
-                </div>
-              </div>
-              <div class="example__wrapper slider-control">
-                <button class="slider-control__toggle slider-control__toggle--before">Было</button>
-                <div class="slider-control__scale">
-                  <div class="slider-control__runner slider-control__runner--middle"></div>
-                </div>
-                <button class="slider-control__toggle slider-control__toggle--after">Стало</button>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </main>
@@ -130,8 +129,12 @@
           <p class="contacts__text">Санкт-Петербург</p>
         </div>
       </div>
-      <div class="page-footer__map">
-
+      <div class="page-footer__map map" id="map">
+        <picture class="map__image">
+          <source media="(min-width: 1260px)" srcset="img/bg-map-desktop_1x.png">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet_1x.png">
+          <img src="img/bg-map-mobile_1x.png" alt="Карта">
+        </picture>
       </div>
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
@@ -141,7 +144,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="" aria-label="Мы в Вконтакте">
-                <svg class="social__icon social__icon--vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="social__icon social__icon--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve" width="22px" height="12px" fill="currentColor">
                 <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
                   c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
@@ -161,7 +164,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="" aria-label="Мы в Инстаграме">
-                <svg class="social__icon social__icon--inst" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="social__icon social__icon--inst" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve" width="17px" height="17px" fill="currentColor">
                 <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
                   M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
@@ -173,7 +176,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="" aria-label="Мы в Фейсбуке">
-                <svg class="social__icon social__icon--fb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="social__icon social__icon--fb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve" width="10px" height="19px" fill="currentColor">
                 <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
                   h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
@@ -193,6 +196,7 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

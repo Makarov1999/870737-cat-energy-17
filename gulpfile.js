@@ -10,6 +10,8 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var del = require("del");
+var rename = require("gulp-rename");
+
 
 gulp.task("clean", function() {
   return del("build");
@@ -23,7 +25,9 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -39,7 +43,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/**/*.html").on("change", server.reload);
 });
 
 gulp.task("images", function() {
@@ -57,8 +61,8 @@ gulp.task("copy", function(){
   return gulp.src([
     "source/**/*.html",
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**"
+    "source/img/**.{png,jpg,svg}",
+    "source/js/**/*.js"
   ], {
     base: "source"
   })

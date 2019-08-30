@@ -12,11 +12,13 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $text_black;
+  font-weight: 400;
 }
 
 .contacts__text {
   margin: 0;
   padding: 0;
+  font-family: $arial;
   font-size: 14px;
   line-height: 20px;
   color: $text_grey;
@@ -62,6 +64,7 @@
 @media (min-width: $desktop) {
   .contacts {
     position: absolute;
+    z-index: 1000;
     width: 570px;
     top: 95px;
     left: 110px;

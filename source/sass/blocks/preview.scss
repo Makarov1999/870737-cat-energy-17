@@ -5,7 +5,7 @@
   align-items: center;
   padding-top: 29px;
   background-color: $bg_green;
-  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 69%, #ffffff 69%);
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #64a83b 305px, #ffffff 305px);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto, 100% 100%;
@@ -14,10 +14,10 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .preview {
-    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #64a83b 69%, #ffffff 69%);
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #64a83b 305px, #ffffff 305px);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: contain, 100% 100%;
+    background-size: 320px 305px, 100% 100%;
   }
 }
 
@@ -125,6 +125,7 @@
       position: absolute;
       top: -216px;
       left: 50%;
+      background-color: #64a83b;
       background-image: url("../img/index-background-desktop@1x.jpg");
       width: 50%;
       height: 696px;

@@ -1,7 +1,7 @@
 .copyright__link {
   position: relative;
   display: block;
-  font-family: $font;
+  font-family: $arial;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -20,7 +20,7 @@
   }
 
   &:active .copyright__icon {
-    fill: rgba(104, 183, 56, 0.3);
+    opacity: 0.3;
   }
 }
 

@@ -14,9 +14,9 @@
 .page-footer__map {
   width: 100%;
   min-height: 372px;
-  background-image: url("../img/bg-map-mobile_1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-footer__logo {
@@ -24,6 +24,18 @@
   text-align: center;
   padding-top: 39px;
   padding-bottom: 31px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -38,10 +50,6 @@
 }
 
 @media (min-width: $tablet) {
-  .page-footer__map {
-    background-image: url("../img/bg-map-tablet_1x.png");
-  }
-
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -66,9 +74,5 @@
   .page-footer__wrapper {
     padding-left: 110px;
     padding-right: 110px;
-  }
-
-  .page-footer__map {
-    background-image: url("../img/bg-map-desktop_1x.png");
   }
 }

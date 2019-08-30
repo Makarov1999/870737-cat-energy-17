@@ -1,5 +1,9 @@
+.spec__row {
+  font-family: $arial;
+}
+
 .spec__field {
-  padding-right: 64px;
+  padding-right: 35px;
 }
 
 @media (min-width: $tablet) {

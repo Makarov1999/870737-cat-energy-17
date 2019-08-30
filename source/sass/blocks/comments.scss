@@ -6,7 +6,8 @@
 }
 
 .comments__caption {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
   max-width: none;
   margin-right: -20px;
