@@ -1,15 +1,15 @@
 .social__list {
-  width: 100%;
+  width: 150px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   padding: 0;
   padding-top: 22px;
   padding-bottom: 18px;
+  padding-left: 15px;
   list-style: none;
-  border-top: 1px solid #cdcdcd;
-  border-bottom: 1px solid #cdcdcd;
 }
 
 .social__item {
@@ -47,7 +47,6 @@
 
 @media (min-width: $tablet) {
   .social__list {
-    border: none;
     padding: 0;
   }
 

@@ -211,7 +211,7 @@
 
     &--before {
       flex-shrink: 0;
-      width: 52.5%;
+      width: 49%;
 
       img {
         top: 0;
@@ -286,4 +286,36 @@
     flex-grow: 1;
     margin-top: -179px;
   }
+
+  .example__slide {
+    width: 690px;
+    height: 517px;
+
+    img {
+      position: absolute;
+      z-index: 10;
+    }
+
+    &--before {
+      flex-shrink: 0;
+      width: 52.5%;
+
+      img {
+        top: 0;
+        left: 0
+      }
+
+    }
+
+    &--after {
+
+      img {
+        top: 0;
+        right: 0;
+      }
+      width: 100%;
+    }
+  }
+
+
 }
