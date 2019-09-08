@@ -1,10 +1,11 @@
 .expand {
   position: relative;
-  padding-top: 83px;
+  padding-top: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 21px;
 
 }
 
@@ -21,7 +22,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 42px;
+    top: 35px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 31px;
@@ -32,7 +33,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 27px;
+    top: 20px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 2px;
@@ -49,14 +50,14 @@
   line-height: 16px;
   color: $text_grey;
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 .expand__button {
   width: 100%;
   display: inline-block;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: $font;
   font-weight: 400;
   font-size: 16px;
@@ -84,9 +85,9 @@
   .expand {
     margin: 0;
     padding: 0;
-    margin-top: 98px;
+    margin-top: 85px;
     margin-bottom: 55px;
-    padding-top: 166px;
+    padding-top: 160px;
     box-sizing: border-box;
     width: 324px;
     border: 1px solid $bg_grey;
@@ -97,10 +98,21 @@
     font-size: 20px;
     max-width: 134px;
     margin-bottom: 28px;
+
+    &::before {
+      top: 81px;
+      width: 61px;
+    }
+
+    &::after {
+      top: 51px;
+      height: 61px;
+
+    }
   }
 
   .expand__slogan {
-    max-width: 166px;
+    max-width: 168px;
     font-size: 16px;
     text-align: center;
     margin-bottom: 85px;

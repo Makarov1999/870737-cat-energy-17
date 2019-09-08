@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  padding-bottom: 31px;
+  padding-bottom: 27px;
 }
 
 .comments__caption {
@@ -33,13 +33,18 @@
 .comments__field {
   width: 100%;
   box-sizing: border-box;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   resize: none;
   margin: 0;
   padding: 0;
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 12px;
-  padding-bottom: 15px;
+  padding-bottom: 44px;
+  font-size: 26px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text_grey;
 
   &::placeholder {
     font-family: $font;
@@ -53,13 +58,13 @@
 
 @media (min-width: $tablet) {
   .comments {
-    padding-bottom: 71px;
+    padding-bottom: 62px;
   }
 
   .comments__caption {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 71px;
+    margin-bottom: 75px;
     padding-bottom: 0;
     margin-left: -70px;
 
@@ -78,10 +83,12 @@
   }
 
   .comments__field {
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 9px;
+    padding-bottom: 13px;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 20px;
+    line-height: 30px;
 
     &::placeholder {
       font-size: 20px;
@@ -91,6 +98,13 @@
 }
 
 @media (min-width: $desktop) {
+  .comments__field {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .comments__caption {
     margin-left: -40px;
     &::before {

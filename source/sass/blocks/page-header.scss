@@ -8,7 +8,6 @@
 
 .page-header__logo {
   display: inline-block;
-  padding-bottom: 15px;
 
   &:hover {
     opacity: 0.8;
@@ -26,7 +25,7 @@
 @media (min-width: $tablet) {
   .page-header {
     padding-top: 24px;
-    padding-bottom: 61px;
+    padding-bottom: 45px;
     display: flex;
     flex-shrink: 0;
     justify-content: space-between;
@@ -40,6 +39,14 @@
     margin-bottom: 83px;
     &--main-page {
       color: #ffffff;
+    }
+
+    &--catalog {
+      margin-bottom: 64px;
+    }
+
+    &--form {
+      margin-bottom: 67px;
     }
   }
 

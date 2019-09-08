@@ -4,15 +4,18 @@
 
 .form__submit-button {
   display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
   width: 100%;
   border: none;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-bottom: 23px;
 
 }
 
 .form__legend {
+  font-family: $arial;
   display: block;
   text-align: center;
   font-size: 14px;
@@ -32,7 +35,9 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 0;
-    margin-right: 61px;
+    margin-right: 59px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .form__legend {
@@ -42,6 +47,7 @@
     display: inline-block;
     text-align: center;
     margin-bottom: 0;
+    vertical-align: super;
   }
 
 }
@@ -58,7 +64,7 @@
   }
 
   .form__wrapper {
-    padding-bottom: 73px;
+    padding-bottom: 67px;
     display: flex;
     justify-content: space-between;
 

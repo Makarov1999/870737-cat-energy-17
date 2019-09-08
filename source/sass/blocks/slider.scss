@@ -2,17 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 35px;
-  width: 310px;
+  padding-bottom: 42px;
+  width: 316px;
 }
 
 @media (min-width: $tablet) {
   .slider {
-    padding-bottom: 75px;
+    padding-right: 0;
+    padding-bottom: 58px;
   }
 
   .slider__wrapper {
-    padding-bottom: 21px;
+    padding-bottom: 50px;
     width: 690px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider__wrapper {
+    padding-bottom: 35px;
   }
 }

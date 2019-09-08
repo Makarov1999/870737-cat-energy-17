@@ -24,7 +24,7 @@
 .preview__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 19px;
+  margin-bottom: 24px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -40,14 +40,14 @@
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 302px;
+  margin-bottom: 301px;
 }
 
 .preview__link {
   display: block;
   width: 100%;
   @include generate_link();
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 11px;
 }
 
@@ -69,7 +69,7 @@
     padding-left: 120px;
     background-color: #ffffff;
     background-image: none;
-    margin-bottom: 100px;
+    margin-bottom: 108px;
 
   }
 
@@ -80,7 +80,8 @@
     line-height: 60px;
     text-align: left;
     color: #111111;
-    margin-bottom: 33px;
+    margin-bottom: 40px;
+    margin-left: -34px;
   }
 
   .preview__slogan {
@@ -89,6 +90,7 @@
     line-height: 20px;
     text-align: left;
     color: #111111;
+    margin-left: -32px;
   }
 
   .preview__image {
@@ -102,6 +104,7 @@
     padding: 15px 20px;
     font-size: 20px;
     line-height: 20px;
+    margin-left: -34px;
   }
 }
 
@@ -113,7 +116,7 @@
     min-height: 480px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
     background-color: #ffffff;
     background-image: none;
     background-size: auto;
@@ -128,19 +131,19 @@
       background-color: #64a83b;
       background-image: url("../img/index-background-desktop@1x.jpg");
       width: 50%;
-      height: 696px;
+      height: 705px;
       z-index: -10;
     }
+  }
 
+  .preview__title {
+    margin-left: 21px;
+    margin-top: 16px;
   }
 
   .preview__image {
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .preview__slogan {
-    margin-bottom: 53px;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -150,11 +153,16 @@
     }
   }
   .preview__image {
-    top: 0;
-    left: 58.5%;
+    top: -64px;
+    left: 58.4%;
+  }
+
+  .preview__link {
+    margin-left: 19px;
   }
 
   .preview__slogan {
-    margin-bottom: 53px;
+    margin-left: 19px;
+    margin-bottom: 55px;
   }
 }

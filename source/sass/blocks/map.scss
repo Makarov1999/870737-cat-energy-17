@@ -1,8 +1,14 @@
 .map {
   position: relative;
-  height: 400px;
+  height: 361px;
 }
 
 .map__image--hidden {
   display: none;
+}
+
+@media (min-width: $tablet) {
+  .map {
+    height: 400px;
+  }
 }

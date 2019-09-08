@@ -1,7 +1,7 @@
 .checkboxes {
   margin: 0;
   padding: 0;
-  padding-bottom: 43px;
+  padding-bottom: 41px;
 }
 
 .checkboxes__list {
@@ -36,7 +36,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
   padding-left: 46px;
 
   &:last-child {
@@ -45,6 +45,7 @@
 }
 
 .checkboxes__title {
+  display: block;
   position: relative;
   @include generate_label();
 
@@ -52,8 +53,8 @@
     content: "";
     position: absolute;
     box-sizing: border-box;
-    top: 0;
-    left: -46px;
+    top: -6px;
+    left: -45px;
     width: 30px;
     height: 30px;
     border: 1px solid #cdcdcd;
@@ -82,11 +83,21 @@
   opacity: 0.3;
 }
 
+.checkboxes__field:disabled + .checkboxes__title::before {
+  opacity: 0.2;
+}
+
+
+
 @media (min-width: $tablet) {
+  .checkboxes {
+    padding-bottom: 11px;
+  }
+
   .checkboxes__caption {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 64px;
+    padding-bottom: 67px;
     margin-left: -70px;
 
     &::after {
@@ -105,15 +116,17 @@
 
   .checkboxes__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-right: -153px;
 
   }
 
   .checkboxes__item {
-    width: 40%;
+    width: 190px;
     padding-bottom: 53px;
     padding-left: 60px;
+    margin-right: 153px;
   }
 
   .checkboxes__title {
@@ -123,7 +136,7 @@
     &::before {
       width: 40px;
       height: 40px;
-      top: -4px;
+      top: -9px;
       left: -60px;
     }
   }
@@ -131,13 +144,17 @@
 
 @media (min-width: $desktop) {
   .checkboxes {
-    padding-right: 98px;
-    padding-bottom: 72px;
+    padding-bottom: 38px;
+  }
+
+  .checkboxes__list {
+    margin-right: -106px
   }
 
   .checkboxes__item {
     width: 219px;
-    padding-bottom: 0;
+    margin-right: 106px;
+    padding-bottom: 36px;
   }
 }
 

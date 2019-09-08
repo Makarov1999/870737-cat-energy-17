@@ -13,7 +13,7 @@
 
 .page-footer__map {
   width: 100%;
-  min-height: 372px;
+  height: 372px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@
   display: block;
   text-align: center;
   padding-top: 39px;
-  padding-bottom: 31px;
+  padding-bottom: 29px;
 
   &:hover {
     opacity: 0.8;
@@ -53,7 +53,8 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 63px;
+    align-items: center;
+    padding-top: 59px;
     padding-bottom: 64px;
   }
 
@@ -63,6 +64,7 @@
 
   .page-footer__social {
     padding: 0;
+    margin-left: 19px;
   }
 
   .page-footer__copyright {
@@ -72,6 +74,7 @@
 
 @media (min-width: $desktop) {
   .page-footer__wrapper {
+    padding-top: 62px;
     padding-left: 110px;
     padding-right: 110px;
   }

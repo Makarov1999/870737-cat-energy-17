@@ -15,12 +15,12 @@
     fill: #68b738;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:active .copyright__text {
+    opacity: 0.3
   }
 
   &:active .copyright__icon {
-    opacity: 0.3;
+    fill: rgba(104, 183, 56, 0.3);
   }
 }
 
@@ -43,12 +43,15 @@
 }
 
 @media (min-width: $desktop) {
+  .copyright {
+    margin-right: 51px;
+  }
   .copyright__link {
     padding-right: 0;
   }
 
   .copyright__icon {
     top: -8px;
-    right: -35px;
+    right: -53px;
   }
 }

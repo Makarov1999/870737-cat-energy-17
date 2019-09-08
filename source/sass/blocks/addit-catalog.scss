@@ -7,7 +7,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -31,13 +31,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .addit-catalog__item {
   margin: 0;
   padding: 0;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 17px;
   border-top: 1px solid $bg_grey;
 
@@ -49,8 +49,10 @@
 .addit-catalog__button {
   width: 100%;
   display: inline-block;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: $tablet) {
@@ -61,9 +63,10 @@
   .addit-catalog__item {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     flex-wrap: wrap;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 25px;
+    padding-bottom: 24px;
     padding-left: 38px;
     padding-right: 38px;
     border: 1px solid #cdcdcd;
@@ -72,7 +75,7 @@
   .addit-catalog__title {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 75px;
+    padding-bottom: 82px;
     margin-left: -30px;
 
     &::after {
@@ -88,6 +91,15 @@
       margin-right: 23px;
     }
   }
+
+  .addit-catalog__button {
+    padding-top: 11px;
+    padding-bottom: 8px;
+  }
+
+  .addit-catalog__list {
+    margin-bottom: 72px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -97,6 +109,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 48px;
+  }
+
+  .addit-catalog__list {
+    margin-bottom: 33px;
   }
 
   .addit-catalog__title {
@@ -126,12 +142,12 @@
 
   .addit-catalog__item {
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     border-left: none;
     border-right: none;
     width: 895px;
-    padding-top: 27px;
-    padding-bottom: 23px;
+    padding-top: 14px;
+    padding-bottom: 17px;
     padding-left: 0;
     padding-right: 0;
   }

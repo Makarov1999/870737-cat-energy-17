@@ -3,7 +3,11 @@
 }
 
 .spec__field {
-  padding-right: 35px;
+  padding-right: 56px;
+}
+
+.spec__value {
+  text-align: right;
 }
 
 @media (min-width: $tablet) {

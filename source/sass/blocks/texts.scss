@@ -1,5 +1,3 @@
-
-
 .texts {
   margin: 0;
   padding: 0;
@@ -18,7 +16,7 @@
   font-size: 24px;
   line-height: 24px;
   color: $text_black;
-  padding-bottom: 30px;
+  padding-bottom: 36px;
   margin-right: -20px;
 
   &::before {
@@ -79,9 +77,13 @@
 }
 
 .texts__field {
-  padding: 15px;
-  border: 1px solid #cdcdcd;
+  padding: 12px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
   flex-grow: 1;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text_grey;
+  text-transform: uppercase;
 
   &::placeholder {
     font-family: $font;
@@ -92,11 +94,19 @@
     color: $text_grey;
   }
 
-  &:active {
+  &--error {
+    border-color: #ff8282;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
     border-color: $text_grey;
   }
 
-  &:active + .texts__image {
+  &:focus + .texts__image {
     fill: #68b738;
   }
 }
@@ -130,35 +140,50 @@
     }
   }
 }
+
 @media (min-width: $tablet) {
   .texts {
     padding-top: 0;
     padding-bottom: 72px;
     &:nth-child(2) {
-      padding-bottom: 69px;
+      padding-bottom: 66px;
     }
   }
 
   .texts__title {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 21px;
+  }
+
+  .texts__wrapper {
+    &--contact {
+      padding-bottom: 22px;
+    }
   }
 
   .texts__field {
-    padding-top: 17px;
-    padding-left: 20px;
-    padding-bottom: 17px;
-    padding-right: 20px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 11px;
+    padding-right: 16px;
+    font-size: 20px;
+    line-height: 20px;
 
     &::placeholder {
       font-size: 20px;
       line-height: 20px;
+      text-transform: uppercase;
+    }
+
+    &--contact {
+      padding-top: 7px;
     }
   }
 
   .texts__caption {
     padding-bottom: 0;
-    margin-bottom: 70px;
+    margin-bottom: 77px;
     font-size: 36px;
     line-height: 36px;
     margin-left: -70px;
@@ -177,6 +202,19 @@
       margin-right: 23px;
     }
   }
+
+  .texts__image {
+    &--mail {
+      top: 20px;
+      right: 16px;
+    }
+
+    &--phone {
+      top: 18px;
+      right: 13px;
+
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -191,6 +229,15 @@
       left: 100%;
       z-index: -1;
       width: 100vw;
+    }
+
+    .texts__field {
+
+      &::placeholder {
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+      }
     }
 
     &::after {
@@ -220,10 +267,22 @@
 
   .texts__wrapper {
     width: 570px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
 
     &--contact {
       padding-bottom: 0;
+    }
+  }
+
+  .texts__image {
+    &--mail {
+      top: 19px;
+      right: 20px;
+    }
+
+    &--phone {
+      top: 17px;
+      right: 17px;
     }
   }
 }
