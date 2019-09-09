@@ -29,6 +29,10 @@
     height: 19px;
     background-image: url("../img/icon-mobile-menu.svg");
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet) {

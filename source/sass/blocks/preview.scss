@@ -137,7 +137,7 @@
   }
 
   .preview__title {
-    margin-left: 21px;
+    margin-left: 0;
     margin-top: 16px;
   }
 
@@ -152,17 +152,18 @@
       background-size: cover;
     }
   }
+
   .preview__image {
     top: -64px;
     left: 58.4%;
   }
 
   .preview__link {
-    margin-left: 19px;
+    margin-left: 0;
   }
 
   .preview__slogan {
-    margin-left: 19px;
+    margin-left: 0;
     margin-bottom: 55px;
   }
 }

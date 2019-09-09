@@ -49,13 +49,16 @@
 .radios__field:checked + .radios__title::after {
   display: block;
 }
+.radios__field:checked + .radios__title::before {
+  border-color: #bababa;
+}
 
 .radios__field:hover + .radios__title::before {
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  border-color: #bababa;
 }
 
 .radios__field:focus + .radios__title::before {
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  border-color: #bababa;
 }
 
 .radios__field:active + .radios__title::before {
@@ -64,6 +67,10 @@
 
 .radios__field:active + .radios__title::after {
   opacity: 0.3
+}
+
+.radios__field:active + .radios__title {
+  opacity: 0.3;
 }
 
 .radios__field:disabled + .radios__title::before {

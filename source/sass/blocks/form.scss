@@ -67,6 +67,7 @@
     padding-bottom: 67px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &:nth-child(2) {
       padding-bottom: 0;

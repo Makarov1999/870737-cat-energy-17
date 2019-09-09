@@ -9,6 +9,8 @@ console.log(slide);
 console.log(sliderBeforeButton);
 console.log(sliderAfterButton);
 
+
+menuButton.classList.remove("main-nav__toggle--hidden");
 menuButton.classList.remove("main-nav__toggle--close");
 menuButton.classList.add("main-nav__toggle--menu");
 menuList.classList.remove("site-list--open");
